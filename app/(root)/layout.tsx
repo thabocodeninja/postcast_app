@@ -1,4 +1,6 @@
-import { Sidebar } from "lucide-react";
+import RightSidebar from "@/components/RightSidebar";
+import LeftSidebar from "@/components/RightSidebar";
+
 
 export default function RootLayout({
   children,
@@ -7,9 +9,9 @@ export default function RootLayout({
 }>) {
   return (
    <main>
-    < Sidebar />
+    <LeftSidebar />
     {children}
-    <p>RIGHT SIDEBAR</p>
+  <RightSidebar />
    </main>
   );
 }
