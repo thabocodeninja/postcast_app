@@ -16,7 +16,7 @@ const handleClerkWebhook = httpAction(async (ctx, request) => {
   }
   switch (event.type) {
     case "user.created":
-      await ctx.runMutation(internal.users.createUser, {
+      await ctx.runMutation(internal.users.creatUser, {
         clerkId: event.data.id,
         email: event.data.email_addresses[0].email_address,
         imageUrl: event.data.image_url,
